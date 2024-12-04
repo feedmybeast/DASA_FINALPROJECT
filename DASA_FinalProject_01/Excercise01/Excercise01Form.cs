@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DASA_FinalProject_01.Utils;
 
 namespace DASA_FinalProject_01
 {
@@ -20,6 +21,9 @@ namespace DASA_FinalProject_01
         public Excercise01Form()
         {
             InitializeComponent();
+            cmbSortOrder.Items.Add("Ascending");
+            cmbSortOrder.Items.Add("Descending");
+            cmbSortOrder.SelectedIndex = 0;
             employeeList = new CircularLinkedList();
         }
 
@@ -36,7 +40,7 @@ namespace DASA_FinalProject_01
             }
             else
             {
-                MessageBox.Show("Please enter valid employee details.");
+                OurMessageBox.Show("Please enter valid employee details");
             }
         }
 
@@ -64,17 +68,50 @@ namespace DASA_FinalProject_01
                 Node foundNode = employeeList.Search(id);
                 if (foundNode != null)
                 {
-                    MessageBox.Show($"Employee found: {foundNode.Data}");
+                    OurMessageBox.Show($"Employee found: {foundNode.Data}");
                 }
                 else
                 {
-                    MessageBox.Show($"Employee with ID {id} not found.");
+                    OurMessageBox.Show($"Employee with ID {id} not found");
                 }
             }
             else
             {
-                MessageBox.Show("Please enter a valid employee ID.");
+                OurMessageBox.Show("Please enter a valid employee ID");
             }
+        }
+        private void btnRemoveAll_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                int IDToRemove = int.Parse(txtIDToRemove.Text);
+                employeeList.RemoveAllByID(IDToRemove);
+                MessageBox.Show($"All employees with ID '{IDToRemove}' have been removed");
+                employeeList.PrintList(lstEmployees);
+            }
+            catch (Exception ex)
+            {
+                OurMessageBox.Show(ex.Message);
+            }
+        }
+
+        private void btnSort_Click(object sender, EventArgs e)
+        {
+            string sortOrder = cmbSortOrder.SelectedItem.ToString();
+
+
+            if (sortOrder == "Ascending")
+            {
+                employeeList.SelectionSort01(); 
+            }
+            else if (sortOrder == "Descending")
+            {
+                employeeList.SelectionSort02();
+            }
+
+            OurMessageBox.Show($"The list has been sorted in {sortOrder} order");
+
+            employeeList.PrintList(lstEmployees); 
         }
     }
 }

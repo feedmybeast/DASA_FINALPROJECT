@@ -14,3 +14,5 @@ C:\Users\Admin\Documents\FUTURE\DASA\DASA_FinalProject\DASA_FinalProject_01\DASA
 C:\Users\Admin\Documents\FUTURE\DASA\DASA_FinalProject\DASA_FinalProject_01\DASA_FinalProject_01\obj\Debug\net8.0-windows\DASA_FinalProject_01.pdb
 C:\Users\Admin\Documents\FUTURE\DASA\DASA_FinalProject\DASA_FinalProject_01\DASA_FinalProject_01\obj\Debug\net8.0-windows\DASA_FinalProject_TEAM03.genruntimeconfig.cache
 C:\Users\Admin\Documents\FUTURE\DASA\DASA_FinalProject\DASA_FinalProject_01\DASA_FinalProject_01\obj\Debug\net8.0-windows\ref\DASA_FinalProject_01.dll
+C:\Users\Admin\Documents\FUTURE\DASA\DASA_FinalProject\DASA_FinalProject_01\DASA_FinalProject_01\obj\Debug\net8.0-windows\DASA_FinalProject_TEAM03.sourcelink.json
+C:\Users\Admin\Documents\FUTURE\DASA\DASA_FinalProject\DASA_FinalProject_01\DASA_FinalProject_01\obj\Debug\net8.0-windows\DASA_FinalProject_01.Utils.OurMessageBox.resources

@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using DASA_FinalProject_01.Utils;
 
 namespace DASA_FinalProject_01
 {
@@ -57,7 +58,7 @@ namespace DASA_FinalProject_01
         {
             if (prevNode == null)
             {
-                MessageBox.Show("The given previous node cannot be null.");
+                OurMessageBox.Show("The given previous node cannot be null");
                 return;
             }
 
@@ -70,22 +71,51 @@ namespace DASA_FinalProject_01
         {
             if (prevNode == null || prevNode.Next == null)
             {
-                MessageBox.Show("The given previous node is not valid or has no next node.");
+                OurMessageBox.Show("The given previous node is not valid or has no next node");
                 return;
             }
 
             Node nodeToRemove = prevNode.Next;
             prevNode.Next = nodeToRemove.Next;
 
-            if (nodeToRemove == head) // If the node to remove is the head
+            if (nodeToRemove == head) 
             {
                 head = prevNode.Next;
             }
         }
 
-        public void SelectionSort()
+        public void SelectionSort01() // This is Ascending Order
         {
-            if (IsEmpty() || head.Next == head) return; // List is empty or has one node
+            if (IsEmpty() || head.Next == head) return;
+
+            Node current = head;
+            do
+            {
+                Node minNode = current;
+                Node nextNode = current.Next;
+
+                do
+                {
+                    if (nextNode.Data.ID > minNode.Data.ID)
+                    {
+                        minNode = nextNode;
+                    }
+                    nextNode = nextNode.Next;
+                } while (nextNode != head);
+
+                if (minNode != current)
+                {
+                    Employee temp = current.Data;
+                    current.Data = minNode.Data;
+                    minNode.Data = temp;
+                }
+
+                current = current.Next;
+            } while (current != head);
+        }
+        public void SelectionSort02() // This is Descending Order
+        {
+            if (IsEmpty() || head.Next == head) return;
 
             Node current = head;
             do
@@ -102,7 +132,6 @@ namespace DASA_FinalProject_01
                     nextNode = nextNode.Next;
                 } while (nextNode != head);
 
-                // Swap data
                 if (minNode != current)
                 {
                     Employee temp = current.Data;
@@ -114,9 +143,11 @@ namespace DASA_FinalProject_01
             } while (current != head);
         }
 
+
+
         public void QuickSort()
         {
-            if (IsEmpty() || head.Next == head) return; // List is empty or has one node
+            if (IsEmpty() || head.Next == head) return;
             head = QuickSort(head);
         }
 
@@ -171,6 +202,7 @@ namespace DASA_FinalProject_01
             return head;
         }
 
+
         public void Merge(CircularLinkedList otherList)
         {
             if (otherList.IsEmpty()) return;
@@ -188,14 +220,14 @@ namespace DASA_FinalProject_01
             }
             temp.Next = otherList.head;
 
-            // Make the merged list circular
+
             Node otherTemp = otherList.head;
             while (otherTemp.Next != otherList.head)
             {
                 otherTemp = otherTemp.Next;
             }
             otherTemp.Next = head;
-            head = otherList.head; // Update head to point to the merged list
+            head = otherList.head; 
         }
 
         public void RemoveAllByPosition(string position)
@@ -209,14 +241,14 @@ namespace DASA_FinalProject_01
             {
                 if (current.Data.Position == position)
                 {
-                    if (prev == null) // Removing head
+                    if (prev == null) 
                     {
                         Node temp = head;
                         while (temp.Next != head)
                         {
                             temp = temp.Next;
                         }
-                        if (head.Next == head) // Only one node
+                        if (head.Next == head) 
                         {
                             head = null;
                         }
@@ -230,7 +262,7 @@ namespace DASA_FinalProject_01
                     {
                         prev.Next = current.Next;
                     }
-                    current = (prev == null) ? head : prev.Next; // Update current
+                    current = (prev == null) ? head : prev.Next; 
                 }
                 else
                 {
@@ -238,6 +270,139 @@ namespace DASA_FinalProject_01
                     current = current.Next;
                 }
             } while (current != head);
+        }
+        public void RemoveAllByID(int id)
+        {
+            if (IsEmpty()) return;
+
+            Node current = head;
+            Node previous = null;
+            bool found = false;
+
+            do
+            {
+                if (current.Data.ID == id) 
+                {
+                    found = true; 
+
+                    if (previous == null) 
+                    {
+
+                        if (current.Next == head)
+                        {
+                            head = null; 
+                        }
+                        else
+                        {
+                            
+                            Node lastNode = head;
+                            while (lastNode.Next != head)
+                            {
+                                lastNode = lastNode.Next;
+                            }
+                            head = current.Next; 
+                            lastNode.Next = head;
+                        }
+                    }
+                    else
+                    {
+                        previous.Next = current.Next;
+                    }
+
+                    current = previous != null ? previous.Next : head; 
+                }
+                else
+                {
+                    previous = current; 
+                    current = current.Next; 
+                }
+            } while (current != head);
+
+            if (found)
+            {
+                OurMessageBox.Show($"All nodes with ID {id} have been removed");
+            }
+            else
+            {
+                OurMessageBox.Show($"No nodes with ID {id} found");
+            }
+        }
+        public void PrintList(ListBox listBox)
+        {
+            listBox.Items.Clear();
+            if (IsEmpty())
+            {
+                listBox.Items.Add("List is empty");
+                return;
+            }
+
+            Node current = head;
+            do
+            {
+                listBox.Items.Add(current.Data);
+                current = current.Next;
+            } while (current != head);
+        }
+        public void RemoveFirst()
+        {
+            if (IsEmpty())
+            {
+                OurMessageBox.Show("List is empty");
+                return;
+            }
+
+            if (head.Next == head)
+            {
+                head = null;
+            }
+            else
+            {
+                Node temp = head;
+                while (temp.Next != head)
+                {
+                    temp = temp.Next;
+                }
+                temp.Next = head.Next;
+                head = head.Next;
+            }
+        }
+
+        public void RemoveLast()
+        {
+            if (IsEmpty())
+            {
+                OurMessageBox.Show("List is empty");
+                return;
+            }
+
+            if (head.Next == head) 
+            {
+                head = null;
+            }
+            else
+            {
+                Node temp = head;
+                while (temp.Next.Next != head)
+                {
+                    temp = temp.Next;
+                }
+                temp.Next = head;
+            }
+        }
+        public Node Search(int id)
+        {
+            if (IsEmpty())
+                return null;
+
+            Node current = head;
+            do
+            {
+                if (current.Data.ID == id)
+                    return current;
+                current = current.Next;
+            } while (current != head);
+
+            return null;
         }
     }
 }

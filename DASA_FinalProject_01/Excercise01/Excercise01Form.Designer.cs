@@ -33,13 +33,22 @@
             label4 = new System.Windows.Forms.Label();
             label3 = new System.Windows.Forms.Label();
             panelMain = new System.Windows.Forms.Panel();
+            cmbSortOrder = new System.Windows.Forms.ComboBox();
+            btnSort = new System.Windows.Forms.Button();
+            label9 = new System.Windows.Forms.Label();
+            txtIDToRemove = new System.Windows.Forms.TextBox();
+            btnRemoveAll = new System.Windows.Forms.Button();
+            groupBox1 = new System.Windows.Forms.GroupBox();
+            label8 = new System.Windows.Forms.Label();
+            label5 = new System.Windows.Forms.Label();
+            input_groupBox = new System.Windows.Forms.GroupBox();
+            txtName = new System.Windows.Forms.TextBox();
             label7 = new System.Windows.Forms.Label();
+            txtID = new System.Windows.Forms.TextBox();
             label6 = new System.Windows.Forms.Label();
+            txtPosition = new System.Windows.Forms.TextBox();
             ID_label = new System.Windows.Forms.Label();
             lstEmployees = new System.Windows.Forms.ListBox();
-            txtName = new System.Windows.Forms.TextBox();
-            txtPosition = new System.Windows.Forms.TextBox();
-            txtID = new System.Windows.Forms.TextBox();
             btnSearch = new System.Windows.Forms.Button();
             btnRemoveFirst = new System.Windows.Forms.Button();
             btnRemoveLast = new System.Windows.Forms.Button();
@@ -48,15 +57,12 @@
             label1 = new System.Windows.Forms.Label();
             label2 = new System.Windows.Forms.Label();
             btnExit = new System.Windows.Forms.PictureBox();
-            input_groupBox = new System.Windows.Forms.GroupBox();
-            groupBox1 = new System.Windows.Forms.GroupBox();
-            label5 = new System.Windows.Forms.Label();
-            label8 = new System.Windows.Forms.Label();
+            label10 = new System.Windows.Forms.Label();
             panelBackground.SuspendLayout();
             panelMain.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)btnExit).BeginInit();
-            input_groupBox.SuspendLayout();
             groupBox1.SuspendLayout();
+            input_groupBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)btnExit).BeginInit();
             SuspendLayout();
             // 
             // panelBackground
@@ -99,6 +105,12 @@
             // 
             panelMain.BackColor = System.Drawing.Color.Ivory;
             panelMain.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            panelMain.Controls.Add(label10);
+            panelMain.Controls.Add(cmbSortOrder);
+            panelMain.Controls.Add(btnSort);
+            panelMain.Controls.Add(label9);
+            panelMain.Controls.Add(txtIDToRemove);
+            panelMain.Controls.Add(btnRemoveAll);
             panelMain.Controls.Add(groupBox1);
             panelMain.Controls.Add(input_groupBox);
             panelMain.Controls.Add(lstEmployees);
@@ -113,6 +125,126 @@
             panelMain.Size = new System.Drawing.Size(1039, 511);
             panelMain.TabIndex = 1;
             // 
+            // cmbSortOrder
+            // 
+            cmbSortOrder.FormattingEnabled = true;
+            cmbSortOrder.Location = new System.Drawing.Point(518, 158);
+            cmbSortOrder.Name = "cmbSortOrder";
+            cmbSortOrder.Size = new System.Drawing.Size(111, 28);
+            cmbSortOrder.TabIndex = 24;
+            // 
+            // btnSort
+            // 
+            btnSort.BackColor = System.Drawing.Color.Teal;
+            btnSort.Font = new System.Drawing.Font("Candara", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
+            btnSort.ForeColor = System.Drawing.Color.Snow;
+            btnSort.ImageAlign = System.Drawing.ContentAlignment.TopRight;
+            btnSort.Location = new System.Drawing.Point(387, 143);
+            btnSort.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            btnSort.Name = "btnSort";
+            btnSort.Size = new System.Drawing.Size(116, 57);
+            btnSort.TabIndex = 23;
+            btnSort.Text = "Sort";
+            btnSort.UseVisualStyleBackColor = false;
+            btnSort.Click += btnSort_Click;
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Font = new System.Drawing.Font("Candara", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
+            label9.Location = new System.Drawing.Point(518, 55);
+            label9.Name = "label9";
+            label9.Size = new System.Drawing.Size(87, 15);
+            label9.TabIndex = 22;
+            label9.Text = "ID To Remove:";
+            // 
+            // txtIDToRemove
+            // 
+            txtIDToRemove.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.AllSystemSources;
+            txtIDToRemove.Cursor = System.Windows.Forms.Cursors.IBeam;
+            txtIDToRemove.Font = new System.Drawing.Font("Candara Light", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            txtIDToRemove.Location = new System.Drawing.Point(518, 74);
+            txtIDToRemove.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            txtIDToRemove.Name = "txtIDToRemove";
+            txtIDToRemove.PlaceholderText = "ID To Remove";
+            txtIDToRemove.Size = new System.Drawing.Size(111, 29);
+            txtIDToRemove.TabIndex = 21;
+            // 
+            // btnRemoveAll
+            // 
+            btnRemoveAll.BackColor = System.Drawing.Color.Teal;
+            btnRemoveAll.Font = new System.Drawing.Font("Candara", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
+            btnRemoveAll.ForeColor = System.Drawing.Color.Snow;
+            btnRemoveAll.ImageAlign = System.Drawing.ContentAlignment.TopRight;
+            btnRemoveAll.Location = new System.Drawing.Point(387, 54);
+            btnRemoveAll.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            btnRemoveAll.Name = "btnRemoveAll";
+            btnRemoveAll.Size = new System.Drawing.Size(116, 57);
+            btnRemoveAll.TabIndex = 20;
+            btnRemoveAll.Text = "Remove";
+            btnRemoveAll.UseVisualStyleBackColor = false;
+            btnRemoveAll.Click += btnRemoveAll_Click;
+            // 
+            // groupBox1
+            // 
+            groupBox1.Controls.Add(label8);
+            groupBox1.Controls.Add(label5);
+            groupBox1.Font = new System.Drawing.Font("Candara", 9F, System.Drawing.FontStyle.Bold);
+            groupBox1.Location = new System.Drawing.Point(16, 413);
+            groupBox1.Name = "groupBox1";
+            groupBox1.Size = new System.Drawing.Size(224, 72);
+            groupBox1.TabIndex = 19;
+            groupBox1.TabStop = false;
+            groupBox1.Text = "Team 03";
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Font = new System.Drawing.Font("Candara", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            label8.Location = new System.Drawing.Point(6, 48);
+            label8.Name = "label8";
+            label8.Size = new System.Drawing.Size(213, 21);
+            label8.TabIndex = 7;
+            label8.Text = "23110053 - Nguyen Nhat Phat";
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new System.Drawing.Font("Candara", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            label5.Location = new System.Drawing.Point(6, 22);
+            label5.Name = "label5";
+            label5.Size = new System.Drawing.Size(207, 21);
+            label5.TabIndex = 6;
+            label5.Text = "23110052 - Bui Tran Tan Phat";
+            // 
+            // input_groupBox
+            // 
+            input_groupBox.Controls.Add(txtName);
+            input_groupBox.Controls.Add(label7);
+            input_groupBox.Controls.Add(txtID);
+            input_groupBox.Controls.Add(label6);
+            input_groupBox.Controls.Add(txtPosition);
+            input_groupBox.Controls.Add(ID_label);
+            input_groupBox.Font = new System.Drawing.Font("Candara", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
+            input_groupBox.Location = new System.Drawing.Point(16, 48);
+            input_groupBox.Name = "input_groupBox";
+            input_groupBox.Size = new System.Drawing.Size(365, 235);
+            input_groupBox.TabIndex = 18;
+            input_groupBox.TabStop = false;
+            input_groupBox.Text = "Input the Employee info";
+            // 
+            // txtName
+            // 
+            txtName.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.AllSystemSources;
+            txtName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            txtName.Font = new System.Drawing.Font("Candara Light", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            txtName.Location = new System.Drawing.Point(122, 110);
+            txtName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            txtName.Name = "txtName";
+            txtName.PlaceholderText = "Employee Name";
+            txtName.Size = new System.Drawing.Size(212, 29);
+            txtName.TabIndex = 13;
+            // 
             // label7
             // 
             label7.AutoSize = true;
@@ -123,6 +255,18 @@
             label7.TabIndex = 17;
             label7.Text = "Position:";
             // 
+            // txtID
+            // 
+            txtID.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.AllSystemSources;
+            txtID.Cursor = System.Windows.Forms.Cursors.IBeam;
+            txtID.Font = new System.Drawing.Font("Candara Light", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            txtID.Location = new System.Drawing.Point(122, 43);
+            txtID.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            txtID.Name = "txtID";
+            txtID.PlaceholderText = "Employee ID";
+            txtID.Size = new System.Drawing.Size(212, 29);
+            txtID.TabIndex = 11;
+            // 
             // label6
             // 
             label6.AutoSize = true;
@@ -132,6 +276,18 @@
             label6.Size = new System.Drawing.Size(65, 24);
             label6.TabIndex = 16;
             label6.Text = "Name:";
+            // 
+            // txtPosition
+            // 
+            txtPosition.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.AllSystemSources;
+            txtPosition.Cursor = System.Windows.Forms.Cursors.IBeam;
+            txtPosition.Font = new System.Drawing.Font("Candara Light", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            txtPosition.Location = new System.Drawing.Point(122, 187);
+            txtPosition.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            txtPosition.Name = "txtPosition";
+            txtPosition.PlaceholderText = "Employee Position";
+            txtPosition.Size = new System.Drawing.Size(212, 29);
+            txtPosition.TabIndex = 12;
             // 
             // ID_label
             // 
@@ -153,42 +309,6 @@
             lstEmployees.Size = new System.Drawing.Size(377, 436);
             lstEmployees.TabIndex = 14;
             // 
-            // txtName
-            // 
-            txtName.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.AllSystemSources;
-            txtName.Cursor = System.Windows.Forms.Cursors.IBeam;
-            txtName.Font = new System.Drawing.Font("Candara Light", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-            txtName.Location = new System.Drawing.Point(122, 110);
-            txtName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            txtName.Name = "txtName";
-            txtName.PlaceholderText = "Employee Name";
-            txtName.Size = new System.Drawing.Size(212, 29);
-            txtName.TabIndex = 13;
-            // 
-            // txtPosition
-            // 
-            txtPosition.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.AllSystemSources;
-            txtPosition.Cursor = System.Windows.Forms.Cursors.IBeam;
-            txtPosition.Font = new System.Drawing.Font("Candara Light", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-            txtPosition.Location = new System.Drawing.Point(122, 187);
-            txtPosition.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            txtPosition.Name = "txtPosition";
-            txtPosition.PlaceholderText = "Employee Position";
-            txtPosition.Size = new System.Drawing.Size(212, 29);
-            txtPosition.TabIndex = 12;
-            // 
-            // txtID
-            // 
-            txtID.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.AllSystemSources;
-            txtID.Cursor = System.Windows.Forms.Cursors.IBeam;
-            txtID.Font = new System.Drawing.Font("Candara Light", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-            txtID.Location = new System.Drawing.Point(122, 43);
-            txtID.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            txtID.Name = "txtID";
-            txtID.PlaceholderText = "Employee ID";
-            txtID.Size = new System.Drawing.Size(212, 29);
-            txtID.TabIndex = 11;
-            // 
             // btnSearch
             // 
             btnSearch.BackColor = System.Drawing.Color.DarkCyan;
@@ -205,13 +325,13 @@
             // 
             // btnRemoveFirst
             // 
-            btnRemoveFirst.BackColor = System.Drawing.Color.DarkCyan;
+            btnRemoveFirst.BackColor = System.Drawing.Color.DarkSlateGray;
             btnRemoveFirst.Font = new System.Drawing.Font("Candara", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
             btnRemoveFirst.ForeColor = System.Drawing.Color.Snow;
-            btnRemoveFirst.Location = new System.Drawing.Point(434, 49);
+            btnRemoveFirst.Location = new System.Drawing.Point(16, 340);
             btnRemoveFirst.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             btnRemoveFirst.Name = "btnRemoveFirst";
-            btnRemoveFirst.Size = new System.Drawing.Size(194, 42);
+            btnRemoveFirst.Size = new System.Drawing.Size(154, 42);
             btnRemoveFirst.TabIndex = 9;
             btnRemoveFirst.Text = "Remove First Employee";
             btnRemoveFirst.UseVisualStyleBackColor = false;
@@ -219,14 +339,14 @@
             // 
             // btnRemoveLast
             // 
-            btnRemoveLast.BackColor = System.Drawing.Color.DarkCyan;
+            btnRemoveLast.BackColor = System.Drawing.Color.DarkSlateGray;
             btnRemoveLast.Font = new System.Drawing.Font("Candara", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
             btnRemoveLast.ForeColor = System.Drawing.Color.Snow;
             btnRemoveLast.ImageAlign = System.Drawing.ContentAlignment.TopRight;
-            btnRemoveLast.Location = new System.Drawing.Point(434, 99);
+            btnRemoveLast.Location = new System.Drawing.Point(197, 340);
             btnRemoveLast.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             btnRemoveLast.Name = "btnRemoveLast";
-            btnRemoveLast.Size = new System.Drawing.Size(194, 42);
+            btnRemoveLast.Size = new System.Drawing.Size(184, 42);
             btnRemoveLast.TabIndex = 8;
             btnRemoveLast.Text = "Remove Last Employee";
             btnRemoveLast.UseVisualStyleBackColor = false;
@@ -237,7 +357,7 @@
             btnPrint.BackColor = System.Drawing.Color.DarkCyan;
             btnPrint.Font = new System.Drawing.Font("Candara", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
             btnPrint.ForeColor = System.Drawing.Color.Snow;
-            btnPrint.Location = new System.Drawing.Point(434, 443);
+            btnPrint.Location = new System.Drawing.Point(734, 4);
             btnPrint.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             btnPrint.Name = "btnPrint";
             btnPrint.Size = new System.Drawing.Size(194, 42);
@@ -293,53 +413,15 @@
             btnExit.TabStop = false;
             btnExit.Click += btnExit_Click;
             // 
-            // input_groupBox
+            // label10
             // 
-            input_groupBox.Controls.Add(txtName);
-            input_groupBox.Controls.Add(label7);
-            input_groupBox.Controls.Add(txtID);
-            input_groupBox.Controls.Add(label6);
-            input_groupBox.Controls.Add(txtPosition);
-            input_groupBox.Controls.Add(ID_label);
-            input_groupBox.Font = new System.Drawing.Font("Candara", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
-            input_groupBox.Location = new System.Drawing.Point(16, 48);
-            input_groupBox.Name = "input_groupBox";
-            input_groupBox.Size = new System.Drawing.Size(365, 235);
-            input_groupBox.TabIndex = 18;
-            input_groupBox.TabStop = false;
-            input_groupBox.Text = "Input the Employee info";
-            // 
-            // groupBox1
-            // 
-            groupBox1.Controls.Add(label8);
-            groupBox1.Controls.Add(label5);
-            groupBox1.Font = new System.Drawing.Font("Candara", 9F, System.Drawing.FontStyle.Bold);
-            groupBox1.Location = new System.Drawing.Point(16, 413);
-            groupBox1.Name = "groupBox1";
-            groupBox1.Size = new System.Drawing.Size(224, 72);
-            groupBox1.TabIndex = 19;
-            groupBox1.TabStop = false;
-            groupBox1.Text = "Team 03";
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Font = new System.Drawing.Font("Candara", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-            label5.Location = new System.Drawing.Point(6, 22);
-            label5.Name = "label5";
-            label5.Size = new System.Drawing.Size(207, 21);
-            label5.TabIndex = 6;
-            label5.Text = "23110052 - Bui Tran Tan Phat";
-            // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.Font = new System.Drawing.Font("Candara", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-            label8.Location = new System.Drawing.Point(6, 48);
-            label8.Name = "label8";
-            label8.Size = new System.Drawing.Size(213, 21);
-            label8.TabIndex = 7;
-            label8.Text = "23110053 - Nguyen Nhat Phat";
+            label10.AutoSize = true;
+            label10.Font = new System.Drawing.Font("Candara", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
+            label10.Location = new System.Drawing.Point(518, 140);
+            label10.Name = "label10";
+            label10.Size = new System.Drawing.Size(43, 15);
+            label10.TabIndex = 25;
+            label10.Text = "Order:";
             // 
             // Excercise01Form
             // 
@@ -349,6 +431,7 @@
             ClientSize = new System.Drawing.Size(1063, 600);
             Controls.Add(panelBackground);
             FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             Name = "Excercise01Form";
             StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -356,11 +439,12 @@
             panelBackground.ResumeLayout(false);
             panelBackground.PerformLayout();
             panelMain.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)btnExit).EndInit();
-            input_groupBox.ResumeLayout(false);
-            input_groupBox.PerformLayout();
+            panelMain.PerformLayout();
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
+            input_groupBox.ResumeLayout(false);
+            input_groupBox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)btnExit).EndInit();
             ResumeLayout(false);
         }
 
@@ -389,6 +473,12 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.GroupBox input_groupBox;
+        private System.Windows.Forms.Button btnRemoveAll;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox txtIDToRemove;
+        private System.Windows.Forms.Button btnSort;
+        private System.Windows.Forms.ComboBox cmbSortOrder;
+        private System.Windows.Forms.Label label10;
     }
 }
 
