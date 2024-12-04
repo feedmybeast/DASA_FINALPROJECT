@@ -1,0 +1,16 @@
+C:\Users\Admin\Documents\FUTURE\DASA\DASA_FinalProject\DASA_FinalProject_01\DASA_FinalProject_01\bin\Debug\net8.0-windows\DASA_FinalProject_01.exe
+C:\Users\Admin\Documents\FUTURE\DASA\DASA_FinalProject\DASA_FinalProject_01\DASA_FinalProject_01\bin\Debug\net8.0-windows\DASA_FinalProject_01.dll.config
+C:\Users\Admin\Documents\FUTURE\DASA\DASA_FinalProject\DASA_FinalProject_01\DASA_FinalProject_01\bin\Debug\net8.0-windows\DASA_FinalProject_01.deps.json
+C:\Users\Admin\Documents\FUTURE\DASA\DASA_FinalProject\DASA_FinalProject_01\DASA_FinalProject_01\bin\Debug\net8.0-windows\DASA_FinalProject_01.runtimeconfig.json
+C:\Users\Admin\Documents\FUTURE\DASA\DASA_FinalProject\DASA_FinalProject_01\DASA_FinalProject_01\bin\Debug\net8.0-windows\DASA_FinalProject_01.dll
+C:\Users\Admin\Documents\FUTURE\DASA\DASA_FinalProject\DASA_FinalProject_01\DASA_FinalProject_01\bin\Debug\net8.0-windows\DASA_FinalProject_01.pdb
+C:\Users\Admin\Documents\FUTURE\DASA\DASA_FinalProject\DASA_FinalProject_01\DASA_FinalProject_01\obj\Debug\net8.0-windows\DASA_FinalProject_01.Excercise01Form.resources
+C:\Users\Admin\Documents\FUTURE\DASA\DASA_FinalProject\DASA_FinalProject_01\DASA_FinalProject_01\obj\Debug\net8.0-windows\DASA_FinalProject_01.Properties.Resources.resources
+C:\Users\Admin\Documents\FUTURE\DASA\DASA_FinalProject\DASA_FinalProject_01\DASA_FinalProject_01\obj\Debug\net8.0-windows\DASA_FinalProject_TEAM03.csproj.GenerateResource.cache
+C:\Users\Admin\Documents\FUTURE\DASA\DASA_FinalProject\DASA_FinalProject_01\DASA_FinalProject_01\obj\Debug\net8.0-windows\DASA_FinalProject_TEAM03.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Documents\FUTURE\DASA\DASA_FinalProject\DASA_FinalProject_01\DASA_FinalProject_01\obj\Debug\net8.0-windows\DASA_FinalProject_TEAM03.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Documents\FUTURE\DASA\DASA_FinalProject\DASA_FinalProject_01\DASA_FinalProject_01\obj\Debug\net8.0-windows\DASA_FinalProject_01.dll
+C:\Users\Admin\Documents\FUTURE\DASA\DASA_FinalProject\DASA_FinalProject_01\DASA_FinalProject_01\obj\Debug\net8.0-windows\refint\DASA_FinalProject_01.dll
+C:\Users\Admin\Documents\FUTURE\DASA\DASA_FinalProject\DASA_FinalProject_01\DASA_FinalProject_01\obj\Debug\net8.0-windows\DASA_FinalProject_01.pdb
+C:\Users\Admin\Documents\FUTURE\DASA\DASA_FinalProject\DASA_FinalProject_01\DASA_FinalProject_01\obj\Debug\net8.0-windows\DASA_FinalProject_TEAM03.genruntimeconfig.cache
+C:\Users\Admin\Documents\FUTURE\DASA\DASA_FinalProject\DASA_FinalProject_01\DASA_FinalProject_01\obj\Debug\net8.0-windows\ref\DASA_FinalProject_01.dll
