@@ -86,7 +86,6 @@ namespace DASA_FinalProject_01
             {
                 int IDToRemove = int.Parse(txtIDToRemove.Text);
                 employeeList.RemoveAllByID(IDToRemove);
-                MessageBox.Show($"All employees with ID '{IDToRemove}' have been removed");
                 employeeList.PrintList(lstEmployees);
             }
             catch (Exception ex)

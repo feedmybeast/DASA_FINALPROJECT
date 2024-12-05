@@ -33,6 +33,7 @@
             label4 = new System.Windows.Forms.Label();
             label3 = new System.Windows.Forms.Label();
             panelMain = new System.Windows.Forms.Panel();
+            label10 = new System.Windows.Forms.Label();
             cmbSortOrder = new System.Windows.Forms.ComboBox();
             btnSort = new System.Windows.Forms.Button();
             label9 = new System.Windows.Forms.Label();
@@ -57,7 +58,6 @@
             label1 = new System.Windows.Forms.Label();
             label2 = new System.Windows.Forms.Label();
             btnExit = new System.Windows.Forms.PictureBox();
-            label10 = new System.Windows.Forms.Label();
             panelBackground.SuspendLayout();
             panelMain.SuspendLayout();
             groupBox1.SuspendLayout();
@@ -124,6 +124,16 @@
             panelMain.Name = "panelMain";
             panelMain.Size = new System.Drawing.Size(1039, 511);
             panelMain.TabIndex = 1;
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Font = new System.Drawing.Font("Candara", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
+            label10.Location = new System.Drawing.Point(518, 140);
+            label10.Name = "label10";
+            label10.Size = new System.Drawing.Size(43, 15);
+            label10.TabIndex = 25;
+            label10.Text = "Order:";
             // 
             // cmbSortOrder
             // 
@@ -413,16 +423,6 @@
             btnExit.TabStop = false;
             btnExit.Click += btnExit_Click;
             // 
-            // label10
-            // 
-            label10.AutoSize = true;
-            label10.Font = new System.Drawing.Font("Candara", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
-            label10.Location = new System.Drawing.Point(518, 140);
-            label10.Name = "label10";
-            label10.Size = new System.Drawing.Size(43, 15);
-            label10.TabIndex = 25;
-            label10.Text = "Order:";
-            // 
             // Excercise01Form
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -435,7 +435,7 @@
             Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             Name = "Excercise01Form";
             StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            Text = "Form1";
+            Text = "Excercise01Form";
             panelBackground.ResumeLayout(false);
             panelBackground.PerformLayout();
             panelMain.ResumeLayout(false);

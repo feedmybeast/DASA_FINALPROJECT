@@ -11,46 +11,97 @@ namespace DASA_FinalProject_01
     public class Node
     {
         public Employee Data;
-        public Node Next;
+        public Node pNext;
 
         public Node(Employee data)
         {
             Data = data;
-            Next = null;
+            pNext = null;
         }
+        
     }
 
     public class CircularLinkedList
     {
-        public Node head;
+        public Node pHead;
 
         public CircularLinkedList()
         {
-            head = null;
+            pHead = null;
         }
+        private Node CreateNode(Employee employee)
+        {
+            return new Node(employee);
+        }
+        private bool IsDuplicateID(int id) // Function to check if Employees' ID are duplicated or not
+        {
+            if (IsEmpty()) return false;
 
+            Node current = pHead;
+            do
+            {
+                if (current.Data.ID == id)
+                    return true;
+                current = current.pNext;
+            } while (current != pHead);
+
+            return false;
+        }
         public bool IsEmpty()
         {
-            return head == null;
+            return pHead == null;
+        }
+        public void InsertAtBeginning(Employee employee)
+        {
+            if (IsDuplicateID(employee.ID))
+            {
+                OurMessageBox.Show($"An employee with ID {employee.ID} already exists");
+                return;
+            }
+
+            Node newNode = CreateNode(employee);
+
+            if (IsEmpty())
+            {
+                pHead = newNode;
+                newNode.pNext = pHead;
+            }
+            else
+            {
+                Node temp = pHead;
+                while (temp.pNext != pHead)
+                {
+                    temp = temp.pNext;
+                }
+                temp.pNext = newNode;
+                newNode.pNext = pHead;
+                pHead = newNode;
+            }
         }
 
         public void InsertAtEnd(Employee employee)
         {
+            if (IsDuplicateID(employee.ID))
+            {
+                OurMessageBox.Show($"An employee with ID {employee.ID} already exists");
+                return;
+            }
+
             Node newNode = new Node(employee);
             if (IsEmpty())
             {
-                head = newNode;
-                newNode.Next = head;
+                pHead = newNode;
+                newNode.pNext = pHead;
             }
             else
             {
-                Node temp = head;
-                while (temp.Next != head)
+                Node temp = pHead;
+                while (temp.pNext != pHead)
                 {
-                    temp = temp.Next;
+                    temp = temp.pNext;
                 }
-                temp.Next = newNode;
-                newNode.Next = head;
+                temp.pNext = newNode;
+                newNode.pNext = pHead;
             }
         }
 
@@ -63,65 +114,38 @@ namespace DASA_FinalProject_01
             }
 
             Node newNode = new Node(employee);
-            newNode.Next = prevNode.Next;
-            prevNode.Next = newNode;
+            newNode.pNext = prevNode.pNext;
+            prevNode.pNext = newNode;
         }
 
         public void RemoveAfter(Node prevNode)
         {
-            if (prevNode == null || prevNode.Next == null)
+            if (prevNode == null || prevNode.pNext == null)
             {
                 OurMessageBox.Show("The given previous node is not valid or has no next node");
                 return;
             }
 
-            Node nodeToRemove = prevNode.Next;
-            prevNode.Next = nodeToRemove.Next;
+            Node nodeToRemove = prevNode.pNext;
+            prevNode.pNext = nodeToRemove.pNext;
 
-            if (nodeToRemove == head) 
+            if (nodeToRemove == pHead) 
             {
-                head = prevNode.Next;
+                pHead = prevNode.pNext;
             }
         }
 
         public void SelectionSort01() // This is Ascending Order
         {
-            if (IsEmpty() || head.Next == head) return;
+            if (IsEmpty() || pHead.pNext == pHead) return;
 
-            Node current = head;
+            CircularLinkedList sortedList = new CircularLinkedList();
+            Node current = pHead;
+
             do
             {
                 Node minNode = current;
-                Node nextNode = current.Next;
-
-                do
-                {
-                    if (nextNode.Data.ID > minNode.Data.ID)
-                    {
-                        minNode = nextNode;
-                    }
-                    nextNode = nextNode.Next;
-                } while (nextNode != head);
-
-                if (minNode != current)
-                {
-                    Employee temp = current.Data;
-                    current.Data = minNode.Data;
-                    minNode.Data = temp;
-                }
-
-                current = current.Next;
-            } while (current != head);
-        }
-        public void SelectionSort02() // This is Descending Order
-        {
-            if (IsEmpty() || head.Next == head) return;
-
-            Node current = head;
-            do
-            {
-                Node minNode = current;
-                Node nextNode = current.Next;
+                Node nextNode = current.pNext;
 
                 do
                 {
@@ -129,37 +153,107 @@ namespace DASA_FinalProject_01
                     {
                         minNode = nextNode;
                     }
-                    nextNode = nextNode.Next;
-                } while (nextNode != head);
+                    nextNode = nextNode.pNext;
+                } while (nextNode != pHead);
 
-                if (minNode != current)
+                sortedList.InsertAtEnd(minNode.Data);
+
+                
+                Remove(minNode.Data.ID); 
+
+                current = pHead;
+            } while (!IsEmpty());
+
+            pHead = sortedList.pHead;
+        }
+
+        public void SelectionSort02() // This is Descending Order
+        {
+            if (IsEmpty() || pHead.pNext == pHead) return;
+
+            CircularLinkedList sortedList = new CircularLinkedList();
+            Node current = pHead;
+
+            do
+            {
+                Node maxNode = current;
+                Node nextNode = current.pNext;
+
+                do
                 {
-                    Employee temp = current.Data;
-                    current.Data = minNode.Data;
-                    minNode.Data = temp;
-                }
+                    if (nextNode.Data.ID > maxNode.Data.ID)
+                    {
+                        maxNode = nextNode;
+                    }
+                    nextNode = nextNode.pNext;
+                } while (nextNode != pHead);
 
-                current = current.Next;
-            } while (current != head);
+                sortedList.InsertAtEnd(maxNode.Data);
+
+                Remove(maxNode.Data.ID);
+
+                current = pHead;
+            } while (!IsEmpty());
+
+            pHead = sortedList.pHead;
+        }
+
+        private void Remove(int id) // Method to remove a node by data
+        {
+            if (IsEmpty()) return;
+
+            Node current = pHead;
+            Node previous = null;
+
+            do
+            {
+                if (current.Data.ID == id)
+                {
+                    if (previous == null)
+                    {
+                        if (current.pNext == pHead)
+                        {
+                            pHead = null;
+                        }
+                        else
+                        {
+                            Node lastNode = pHead;
+                            while (lastNode.pNext != pHead)
+                            {
+                                lastNode = lastNode.pNext;
+                            }
+                            pHead = current.pNext;
+                            lastNode.pNext = pHead;
+                        }
+                    }
+                    else
+                    {
+                        previous.pNext = current.pNext;
+                    }
+                    return; 
+                }
+                previous = current;
+                current = current.pNext;
+            } while (current != pHead);
         }
 
 
 
         public void QuickSort()
         {
-            if (IsEmpty() || head.Next == head) return;
-            head = QuickSort(head);
+            if (IsEmpty() || pHead.pNext == pHead) return;
+            pHead = QuickSort(pHead);
         }
 
         private Node QuickSort(Node head)
         {
-            if (head == null || head.Next == head) return head;
+            if (head == null || head.pNext == head) return head;
 
             Node pivot = head;
             Node lessHead = null, lessTail = null;
             Node greaterHead = null, greaterTail = null;
 
-            Node current = head.Next;
+            Node current = head.pNext;
             do
             {
                 if (current.Data.ID < pivot.Data.ID)
@@ -171,8 +265,8 @@ namespace DASA_FinalProject_01
                     }
                     else
                     {
-                        lessTail.Next = current;
-                        lessTail = lessTail.Next;
+                        lessTail.pNext = current;
+                        lessTail = lessTail.pNext;
                     }
                 }
                 else
@@ -184,19 +278,19 @@ namespace DASA_FinalProject_01
                     }
                     else
                     {
-                        greaterTail.Next = current;
-                        greaterTail = greaterTail.Next;
+                        greaterTail.pNext = current;
+                        greaterTail = greaterTail.pNext;
                     }
                 }
-                current = current.Next;
+                current = current.pNext;
             } while (current != head);
 
-            if (lessTail != null) lessTail.Next = pivot;
+            if (lessTail != null) lessTail.pNext = pivot;
             else lessHead = pivot;
 
-            pivot.Next = QuickSort(greaterHead);
+            pivot.pNext = QuickSort(greaterHead);
 
-            if (lessTail != null) lessTail.Next = lessHead;
+            if (lessTail != null) lessTail.pNext = lessHead;
             else head = lessHead;
 
             return head;
@@ -209,32 +303,32 @@ namespace DASA_FinalProject_01
 
             if (IsEmpty())
             {
-                head = otherList.head;
+                pHead = otherList.pHead;
                 return;
             }
 
-            Node temp = head;
-            while (temp.Next != head)
+            Node temp = pHead;
+            while (temp.pNext != pHead)
             {
-                temp = temp.Next;
+                temp = temp.pNext;
             }
-            temp.Next = otherList.head;
+            temp.pNext = otherList.pHead;
 
 
-            Node otherTemp = otherList.head;
-            while (otherTemp.Next != otherList.head)
+            Node otherTemp = otherList.pHead;
+            while (otherTemp.pNext != otherList.pHead)
             {
-                otherTemp = otherTemp.Next;
+                otherTemp = otherTemp.pNext;
             }
-            otherTemp.Next = head;
-            head = otherList.head; 
+            otherTemp.pNext = pHead;
+            pHead = otherList.pHead; 
         }
 
         public void RemoveAllByPosition(string position)
         {
             if (IsEmpty()) return;
 
-            Node current = head;
+            Node current = pHead;
             Node prev = null;
 
             do
@@ -243,39 +337,39 @@ namespace DASA_FinalProject_01
                 {
                     if (prev == null) 
                     {
-                        Node temp = head;
-                        while (temp.Next != head)
+                        Node temp = pHead;
+                        while (temp.pNext != pHead)
                         {
-                            temp = temp.Next;
+                            temp = temp.pNext;
                         }
-                        if (head.Next == head) 
+                        if (pHead.pNext == pHead) 
                         {
-                            head = null;
+                            pHead = null;
                         }
                         else
                         {
-                            head = head.Next;
-                            temp.Next = head;
+                            pHead = pHead.pNext;
+                            temp.pNext = pHead;
                         }
                     }
                     else
                     {
-                        prev.Next = current.Next;
+                        prev.pNext = current.pNext;
                     }
-                    current = (prev == null) ? head : prev.Next; 
+                    current = (prev == null) ? pHead : prev.pNext; 
                 }
                 else
                 {
                     prev = current;
-                    current = current.Next;
+                    current = current.pNext;
                 }
-            } while (current != head);
+            } while (current != pHead);
         }
         public void RemoveAllByID(int id)
         {
             if (IsEmpty()) return;
 
-            Node current = head;
+            Node current = pHead;
             Node previous = null;
             bool found = false;
 
@@ -288,35 +382,35 @@ namespace DASA_FinalProject_01
                     if (previous == null) 
                     {
 
-                        if (current.Next == head)
+                        if (current.pNext == pHead)
                         {
-                            head = null; 
+                            pHead = null; 
                         }
                         else
                         {
                             
-                            Node lastNode = head;
-                            while (lastNode.Next != head)
+                            Node lastNode = pHead;
+                            while (lastNode.pNext != pHead)
                             {
-                                lastNode = lastNode.Next;
+                                lastNode = lastNode.pNext;
                             }
-                            head = current.Next; 
-                            lastNode.Next = head;
+                            pHead = current.pNext; 
+                            lastNode.pNext = pHead;
                         }
                     }
                     else
                     {
-                        previous.Next = current.Next;
+                        previous.pNext = current.pNext;
                     }
 
-                    current = previous != null ? previous.Next : head; 
+                    current = previous != null ? previous.pNext : pHead; 
                 }
                 else
                 {
                     previous = current; 
-                    current = current.Next; 
+                    current = current.pNext; 
                 }
-            } while (current != head);
+            } while (current != pHead);
 
             if (found)
             {
@@ -336,12 +430,12 @@ namespace DASA_FinalProject_01
                 return;
             }
 
-            Node current = head;
+            Node current = pHead;
             do
             {
                 listBox.Items.Add(current.Data);
-                current = current.Next;
-            } while (current != head);
+                current = current.pNext;
+            } while (current != pHead);
         }
         public void RemoveFirst()
         {
@@ -351,19 +445,19 @@ namespace DASA_FinalProject_01
                 return;
             }
 
-            if (head.Next == head)
+            if (pHead.pNext == pHead)
             {
-                head = null;
+                pHead = null;
             }
             else
             {
-                Node temp = head;
-                while (temp.Next != head)
+                Node temp = pHead;
+                while (temp.pNext != pHead)
                 {
-                    temp = temp.Next;
+                    temp = temp.pNext;
                 }
-                temp.Next = head.Next;
-                head = head.Next;
+                temp.pNext = pHead.pNext;
+                pHead = pHead.pNext;
             }
         }
 
@@ -375,18 +469,18 @@ namespace DASA_FinalProject_01
                 return;
             }
 
-            if (head.Next == head) 
+            if (pHead.pNext == pHead) 
             {
-                head = null;
+                pHead = null;
             }
             else
             {
-                Node temp = head;
-                while (temp.Next.Next != head)
+                Node temp = pHead;
+                while (temp.pNext.pNext != pHead)
                 {
-                    temp = temp.Next;
+                    temp = temp.pNext;
                 }
-                temp.Next = head;
+                temp.pNext = pHead;
             }
         }
         public Node Search(int id)
@@ -394,13 +488,13 @@ namespace DASA_FinalProject_01
             if (IsEmpty())
                 return null;
 
-            Node current = head;
+            Node current = pHead;
             do
             {
                 if (current.Data.ID == id)
                     return current;
-                current = current.Next;
-            } while (current != head);
+                current = current.pNext;
+            } while (current != pHead);
 
             return null;
         }

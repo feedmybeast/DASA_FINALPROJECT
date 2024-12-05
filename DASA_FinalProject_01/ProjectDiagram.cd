@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="DASA_FinalProject_01.Employee">
+    <Position X="6.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAkAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Excercise01\Employee.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DASA_FinalProject_01.Node">
+    <Position X="4.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAABAAA=</HashCode>
+      <FileName>Excercise01\CircularLinkedList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DASA_FinalProject_01.CircularLinkedList">
+    <Position X="1.5" Y="1.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AgBIABAABAAAAAgAAAEABAAAAAAQSQAABAAABAAgABg=</HashCode>
+      <FileName>Excercise01\CircularLinkedList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
