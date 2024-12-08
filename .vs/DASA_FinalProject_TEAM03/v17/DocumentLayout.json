@@ -1,30 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Admin\\Documents\\FUTURE\\DASA\\DASA_FinalProject\\DASA_FinalProject\\",
+  "WorkspaceRootPath": "C:\\Users\\Admin\\Downloads\\DASA_FINALPROJECT\\DASA_FINALPROJECT\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0E8C335E-FA53-4340-A5BD-E6D41498EA34}|DASA_FinalProject_01\\DASA_FinalProject_TEAM03.csproj|c:\\users\\admin\\documents\\future\\dasa\\dasa_finalproject\\dasa_finalproject\\dasa_finalproject_01\\excercise01\\circularlinkedlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0E8C335E-FA53-4340-A5BD-E6D41498EA34}|DASA_FinalProject_01\\DASA_FinalProject_TEAM03.csproj|solutionrelative:dasa_finalproject_01\\excercise01\\circularlinkedlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0E8C335E-FA53-4340-A5BD-E6D41498EA34}|DASA_FinalProject_01\\DASA_FinalProject_TEAM03.csproj|C:\\Users\\Admin\\Downloads\\DASA_FINALPROJECT\\DASA_FINALPROJECT\\dasa_finalproject_01\\exercise03\\exercise03form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0E8C335E-FA53-4340-A5BD-E6D41498EA34}|DASA_FinalProject_01\\DASA_FinalProject_TEAM03.csproj|solutionrelative:dasa_finalproject_01\\exercise03\\exercise03form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0E8C335E-FA53-4340-A5BD-E6D41498EA34}|DASA_FinalProject_01\\DASA_FinalProject_TEAM03.csproj|c:\\users\\admin\\documents\\future\\dasa\\dasa_finalproject\\dasa_finalproject\\dasa_finalproject_01\\excercise01\\excercise01form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0E8C335E-FA53-4340-A5BD-E6D41498EA34}|DASA_FinalProject_01\\DASA_FinalProject_TEAM03.csproj|solutionrelative:dasa_finalproject_01\\excercise01\\excercise01form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0E8C335E-FA53-4340-A5BD-E6D41498EA34}|DASA_FinalProject_01\\DASA_FinalProject_TEAM03.csproj|c:\\users\\admin\\downloads\\dasa_finalproject\\dasa_finalproject\\dasa_finalproject_01\\exercise03\\exercise03form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E8C335E-FA53-4340-A5BD-E6D41498EA34}|DASA_FinalProject_01\\DASA_FinalProject_TEAM03.csproj|solutionrelative:dasa_finalproject_01\\exercise03\\exercise03form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0E8C335E-FA53-4340-A5BD-E6D41498EA34}|DASA_FinalProject_01\\DASA_FinalProject_TEAM03.csproj|c:\\users\\admin\\documents\\future\\dasa\\dasa_finalproject\\dasa_finalproject\\dasa_finalproject_01\\utils\\ourmessagebox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0E8C335E-FA53-4340-A5BD-E6D41498EA34}|DASA_FinalProject_01\\DASA_FinalProject_TEAM03.csproj|solutionrelative:dasa_finalproject_01\\utils\\ourmessagebox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0E8C335E-FA53-4340-A5BD-E6D41498EA34}|DASA_FinalProject_01\\DASA_FinalProject_TEAM03.csproj|c:\\users\\admin\\downloads\\dasa_finalproject\\dasa_finalproject\\dasa_finalproject_01\\exercise01\\circularlinkedlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E8C335E-FA53-4340-A5BD-E6D41498EA34}|DASA_FinalProject_01\\DASA_FinalProject_TEAM03.csproj|solutionrelative:dasa_finalproject_01\\exercise01\\circularlinkedlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0E8C335E-FA53-4340-A5BD-E6D41498EA34}|DASA_FinalProject_01\\DASA_FinalProject_TEAM03.csproj|C:\\Users\\Admin\\Documents\\FUTURE\\DASA\\DASA_FinalProject\\DASA_FinalProject\\dasa_finalproject_01\\excercise01\\excercise01form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{0E8C335E-FA53-4340-A5BD-E6D41498EA34}|DASA_FinalProject_01\\DASA_FinalProject_TEAM03.csproj|solutionrelative:dasa_finalproject_01\\excercise01\\excercise01form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0E8C335E-FA53-4340-A5BD-E6D41498EA34}|DASA_FinalProject_01\\DASA_FinalProject_TEAM03.csproj|c:\\users\\admin\\documents\\future\\dasa\\dasa_finalproject\\dasa_finalproject\\dasa_finalproject_01\\projectdiagram.cd||{59B0B277-7DDF-4E36-A3ED-02DAC5B9E2FA}|",
-      "RelativeMoniker": "D:0:0:{0E8C335E-FA53-4340-A5BD-E6D41498EA34}|DASA_FinalProject_01\\DASA_FinalProject_TEAM03.csproj|solutionrelative:dasa_finalproject_01\\projectdiagram.cd||{59B0B277-7DDF-4E36-A3ED-02DAC5B9E2FA}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0E8C335E-FA53-4340-A5BD-E6D41498EA34}|DASA_FinalProject_01\\DASA_FinalProject_TEAM03.csproj|c:\\users\\admin\\documents\\future\\dasa\\dasa_finalproject\\dasa_finalproject\\dasa_finalproject_01\\excercise01\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0E8C335E-FA53-4340-A5BD-E6D41498EA34}|DASA_FinalProject_01\\DASA_FinalProject_TEAM03.csproj|solutionrelative:dasa_finalproject_01\\excercise01\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0E8C335E-FA53-4340-A5BD-E6D41498EA34}|DASA_FinalProject_01\\DASA_FinalProject_TEAM03.csproj|c:\\users\\admin\\downloads\\dasa_finalproject\\dasa_finalproject\\dasa_finalproject_01\\exercise03\\bst.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E8C335E-FA53-4340-A5BD-E6D41498EA34}|DASA_FinalProject_01\\DASA_FinalProject_TEAM03.csproj|solutionrelative:dasa_finalproject_01\\exercise03\\bst.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -33,8 +25,8 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "DockedWidth": 206,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,79 +34,54 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CircularLinkedList.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\FUTURE\\DASA\\DASA_FinalProject\\DASA_FinalProject\\DASA_FinalProject_01\\Excercise01\\CircularLinkedList.cs",
-              "RelativeDocumentMoniker": "DASA_FinalProject_01\\Excercise01\\CircularLinkedList.cs",
-              "ToolTip": "C:\\Users\\Admin\\Documents\\FUTURE\\DASA\\DASA_FinalProject\\DASA_FinalProject\\DASA_FinalProject_01\\Excercise01\\CircularLinkedList.cs",
-              "RelativeToolTip": "DASA_FinalProject_01\\Excercise01\\CircularLinkedList.cs",
-              "ViewState": "AgIAAMoBAAAAAAAAAAAIwPYBAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-04T05:12:33.768Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ProjectDiagram.cd",
-              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\FUTURE\\DASA\\DASA_FinalProject\\DASA_FinalProject\\DASA_FinalProject_01\\ProjectDiagram.cd",
-              "RelativeDocumentMoniker": "DASA_FinalProject_01\\ProjectDiagram.cd",
-              "ToolTip": "C:\\Users\\Admin\\Documents\\FUTURE\\DASA\\DASA_FinalProject\\DASA_FinalProject\\DASA_FinalProject_01\\ProjectDiagram.cd",
-              "RelativeToolTip": "DASA_FinalProject_01\\ProjectDiagram.cd",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000463|",
-              "WhenOpened": "2024-12-04T12:12:42.175Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "OurMessageBox.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\FUTURE\\DASA\\DASA_FinalProject\\DASA_FinalProject\\DASA_FinalProject_01\\Utils\\OurMessageBox.cs",
-              "RelativeDocumentMoniker": "DASA_FinalProject_01\\Utils\\OurMessageBox.cs",
-              "ToolTip": "C:\\Users\\Admin\\Documents\\FUTURE\\DASA\\DASA_FinalProject\\DASA_FinalProject\\DASA_FinalProject_01\\Utils\\OurMessageBox.cs",
-              "RelativeToolTip": "DASA_FinalProject_01\\Utils\\OurMessageBox.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAA9AAAAAAAAAA==",
+              "Title": "CircularLinkedList.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\DASA_FINALPROJECT\\DASA_FINALPROJECT\\DASA_FinalProject_01\\Exercise01\\CircularLinkedList.cs",
+              "RelativeDocumentMoniker": "DASA_FinalProject_01\\Exercise01\\CircularLinkedList.cs",
+              "ToolTip": "C:\\Users\\Admin\\Downloads\\DASA_FINALPROJECT\\DASA_FINALPROJECT\\DASA_FinalProject_01\\Exercise01\\CircularLinkedList.cs",
+              "RelativeToolTip": "DASA_FinalProject_01\\Exercise01\\CircularLinkedList.cs",
+              "ViewState": "AgIAANcAAAAAAAAAAAAmwMkAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-04T09:48:07.57Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Excercise01Form.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\FUTURE\\DASA\\DASA_FinalProject\\DASA_FinalProject\\DASA_FinalProject_01\\Excercise01\\Excercise01Form.cs",
-              "RelativeDocumentMoniker": "DASA_FinalProject_01\\Excercise01\\Excercise01Form.cs",
-              "ToolTip": "C:\\Users\\Admin\\Documents\\FUTURE\\DASA\\DASA_FinalProject\\DASA_FinalProject\\DASA_FinalProject_01\\Excercise01\\Excercise01Form.cs [Design]",
-              "RelativeToolTip": "DASA_FinalProject_01\\Excercise01\\Excercise01Form.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-04T04:37:36.942Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Employee.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\FUTURE\\DASA\\DASA_FinalProject\\DASA_FinalProject\\DASA_FinalProject_01\\Excercise01\\Employee.cs",
-              "RelativeDocumentMoniker": "DASA_FinalProject_01\\Excercise01\\Employee.cs",
-              "ToolTip": "C:\\Users\\Admin\\Documents\\FUTURE\\DASA\\DASA_FinalProject\\DASA_FinalProject\\DASA_FinalProject_01\\Excercise01\\Employee.cs",
-              "RelativeToolTip": "DASA_FinalProject_01\\Excercise01\\Employee.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-04T10:00:25.254Z",
+              "WhenOpened": "2024-12-08T11:06:14.949Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Excercise01Form.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\FUTURE\\DASA\\DASA_FinalProject\\DASA_FinalProject\\DASA_FinalProject_01\\Excercise01\\Excercise01Form.cs",
-              "RelativeDocumentMoniker": "DASA_FinalProject_01\\Excercise01\\Excercise01Form.cs",
-              "ToolTip": "C:\\Users\\Admin\\Documents\\FUTURE\\DASA\\DASA_FinalProject\\DASA_FinalProject\\DASA_FinalProject_01\\Excercise01\\Excercise01Form.cs",
-              "RelativeToolTip": "DASA_FinalProject_01\\Excercise01\\Excercise01Form.cs",
-              "ViewState": "AgIAAEIAAAAAAAAAAAD4v1sAAAANAAAAAAAAAA==",
+              "Title": "Exercise03Form.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\DASA_FINALPROJECT\\DASA_FINALPROJECT\\DASA_FinalProject_01\\Exercise03\\Exercise03Form.cs",
+              "RelativeDocumentMoniker": "DASA_FinalProject_01\\Exercise03\\Exercise03Form.cs",
+              "ToolTip": "C:\\Users\\Admin\\Downloads\\DASA_FINALPROJECT\\DASA_FINALPROJECT\\DASA_FinalProject_01\\Exercise03\\Exercise03Form.cs",
+              "RelativeToolTip": "DASA_FinalProject_01\\Exercise03\\Exercise03Form.cs",
+              "ViewState": "AgIAAIUAAAAAAAAAAAAEwJEAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-04T04:42:49.918Z",
+              "WhenOpened": "2024-12-08T10:48:16.074Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BST.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\DASA_FINALPROJECT\\DASA_FINALPROJECT\\DASA_FinalProject_01\\Exercise03\\BST.cs",
+              "RelativeDocumentMoniker": "DASA_FinalProject_01\\Exercise03\\BST.cs",
+              "ToolTip": "C:\\Users\\Admin\\Downloads\\DASA_FINALPROJECT\\DASA_FINALPROJECT\\DASA_FinalProject_01\\Exercise03\\BST.cs",
+              "RelativeToolTip": "DASA_FinalProject_01\\Exercise03\\BST.cs",
+              "ViewState": "AgIAAHAAAAAAAAAAAAAewH0AAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T10:47:57.487Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Exercise03Form.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\DASA_FINALPROJECT\\DASA_FINALPROJECT\\DASA_FinalProject_01\\Exercise03\\Exercise03Form.cs",
+              "RelativeDocumentMoniker": "DASA_FinalProject_01\\Exercise03\\Exercise03Form.cs",
+              "ToolTip": "C:\\Users\\Admin\\Downloads\\DASA_FINALPROJECT\\DASA_FINALPROJECT\\DASA_FinalProject_01\\Exercise03\\Exercise03Form.cs [Design]",
+              "RelativeToolTip": "DASA_FinalProject_01\\Exercise03\\Exercise03Form.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T10:47:51.013Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }

@@ -2,10 +2,19 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup />
   <ItemGroup>
-    <Compile Update="Excercise01\Excercise01Form.cs">
+    <Compile Update="Exercise01\Excercise01Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Exercise02\Exercise02Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Exercise03\Exercise03Form.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Utils\OurMessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Utils\StartUpForm.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Excercise01Form));
             panelBackground = new System.Windows.Forms.Panel();
+            btnReturn = new System.Windows.Forms.Button();
             label4 = new System.Windows.Forms.Label();
             label3 = new System.Windows.Forms.Label();
             panelMain = new System.Windows.Forms.Panel();
@@ -69,6 +70,7 @@
             // 
             panelBackground.BackColor = System.Drawing.Color.Snow;
             panelBackground.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            panelBackground.Controls.Add(btnReturn);
             panelBackground.Controls.Add(label4);
             panelBackground.Controls.Add(label3);
             panelBackground.Controls.Add(panelMain);
@@ -80,6 +82,21 @@
             panelBackground.Name = "panelBackground";
             panelBackground.Size = new System.Drawing.Size(1039, 572);
             panelBackground.TabIndex = 0;
+            // 
+            // btnReturn
+            // 
+            btnReturn.BackColor = System.Drawing.Color.OrangeRed;
+            btnReturn.Font = new System.Drawing.Font("Candara", 8F, System.Drawing.FontStyle.Bold);
+            btnReturn.ForeColor = System.Drawing.Color.Snow;
+            btnReturn.ImageAlign = System.Drawing.ContentAlignment.TopRight;
+            btnReturn.Location = new System.Drawing.Point(3, 0);
+            btnReturn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            btnReturn.Name = "btnReturn";
+            btnReturn.Size = new System.Drawing.Size(37, 29);
+            btnReturn.TabIndex = 26;
+            btnReturn.Text = "<<";
+            btnReturn.UseVisualStyleBackColor = false;
+            btnReturn.Click += btnReturn_Click;
             // 
             // label4
             // 
@@ -95,7 +112,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new System.Drawing.Font("Candara", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
-            label3.Location = new System.Drawing.Point(3, 4);
+            label3.Location = new System.Drawing.Point(44, 4);
             label3.Name = "label3";
             label3.Size = new System.Drawing.Size(92, 24);
             label3.TabIndex = 5;
@@ -200,7 +217,7 @@
             groupBox1.Controls.Add(label8);
             groupBox1.Controls.Add(label5);
             groupBox1.Font = new System.Drawing.Font("Candara", 9F, System.Drawing.FontStyle.Bold);
-            groupBox1.Location = new System.Drawing.Point(16, 413);
+            groupBox1.Location = new System.Drawing.Point(14, 400);
             groupBox1.Name = "groupBox1";
             groupBox1.Size = new System.Drawing.Size(224, 72);
             groupBox1.TabIndex = 19;
@@ -479,6 +496,7 @@
         private System.Windows.Forms.Button btnSort;
         private System.Windows.Forms.ComboBox cmbSortOrder;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Button btnReturn;
     }
 }
 

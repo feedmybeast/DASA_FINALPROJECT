@@ -445,19 +445,19 @@ namespace DASA_FinalProject_01
                 return;
             }
 
-            if (pHead.pNext == pHead)
+            if (pHead.pNext == pHead) 
             {
                 pHead = null;
             }
             else
             {
                 Node temp = pHead;
-                while (temp.pNext != pHead)
+                while (temp.pNext != pHead) 
                 {
                     temp = temp.pNext;
                 }
-                temp.pNext = pHead.pNext;
-                pHead = pHead.pNext;
+                temp.pNext = pHead.pNext; 
+                pHead = pHead.pNext; 
             }
         }
 
@@ -476,7 +476,7 @@ namespace DASA_FinalProject_01
             else
             {
                 Node temp = pHead;
-                while (temp.pNext.pNext != pHead)
+                while (temp.pNext.pNext != pHead) 
                 {
                     temp = temp.pNext;
                 }

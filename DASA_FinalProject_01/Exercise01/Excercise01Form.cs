@@ -101,7 +101,7 @@ namespace DASA_FinalProject_01
 
             if (sortOrder == "Ascending")
             {
-                employeeList.SelectionSort01(); 
+                employeeList.SelectionSort01();
             }
             else if (sortOrder == "Descending")
             {
@@ -110,7 +110,14 @@ namespace DASA_FinalProject_01
 
             OurMessageBox.Show($"The list has been sorted in {sortOrder} order");
 
-            employeeList.PrintList(lstEmployees); 
+            employeeList.PrintList(lstEmployees);
+        }
+
+        private void btnReturn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            StartUpForm startUpForm= new StartUpForm();
+            startUpForm.Show();
         }
     }
 }
